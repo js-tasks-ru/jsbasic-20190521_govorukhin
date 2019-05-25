@@ -12,6 +12,13 @@ function print (text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid (name) {
+  if (name.length >= 4) {
+    if (name.indexOf(" ") != -1) {
+      return !isValid;
+    } else {
+      return isValid;
+  }
+  }
 }
 
 function sayHello () {
@@ -25,4 +32,3 @@ function sayHello () {
 }
 
 sayHello();
-
