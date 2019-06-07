@@ -7,7 +7,6 @@
  */
 
 function getMinMax(str) {
-    
   let strConverter = str.replace(/,/g, ' ').split(/\s/);
   
   let result = {};
@@ -15,11 +14,11 @@ function getMinMax(str) {
   let maxVar = 0;
 
   for (let n in strConverter) {
-    if (minVar > +strConverter[n]) {
-        minVar = +strConverter[n];
+    if (minVar > parseFloat(strConverter[n])) {
+        minVar = parseFloat(strConverter[n]);
     };
-    if (maxVar < +strConverter[n]) {
-        maxVar = +strConverter[n];
+    if (maxVar < parseFloat(strConverter[n])) {
+        maxVar = parseFloat(strConverter[n]);
     }
     result.min = minVar;
     result.max = maxVar;
