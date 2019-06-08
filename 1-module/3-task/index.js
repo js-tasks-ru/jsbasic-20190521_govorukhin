@@ -13,7 +13,7 @@ function getMinMax(str) {
   let minVar = 0;
   let maxVar = 0;
 
-  for (let n in strConverter) {
+  for (let n = 0; n < strConverter.length; n++) {
     if (minVar > parseFloat(strConverter[n])) {
         minVar = parseFloat(strConverter[n]);
     };
